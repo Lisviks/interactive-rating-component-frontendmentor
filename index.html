@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
+
+    <title>Frontend Mentor | Interactive rating component</title>
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+        color: #fff;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="./app.js" defer></script>
+  </head>
+  <body>
+    <!-- Rating state start -->
+    <main>
+      <div class="card rating-state">
+        <div class="star-icon"><img src="./images/icon-star.svg" alt="icon" /></div>
+        <h2>How did we do?</h2>
+        <p>
+          Please let us know how we did with your support request. All feedback is appreciated to
+          help us improve our offering!
+        </p>
+
+        <div class="rate-buttons">
+          <button class="rate-1 rate-btn" value="1">1</button>
+          <button class="rate-2 rate-btn" value="2">2</button>
+          <button class="rate-3 rate-btn" value="3">3</button>
+          <button class="rate-4 rate-btn" value="4">4</button>
+          <button class="rate-5 rate-btn" value="5">5</button>
+        </div>
+        <button class="btn submit-btn">Submit</button>
+      </div>
+
+      <div class="card thank-you-state hidden">
+        <div class="image"><img src="./images/illustration-thank-you.svg" alt="thank you" /></div>
+        <div class="rating">You selected <span class="output-rating">1</span> out of 5</div>
+        <h2>Thank you!</h2>
+        <p>
+          We appreciate you taking the time to give a rating. If you ever need more support, don’t
+          hesitate to get in touch!
+        </p>
+      </div>
+    </main>
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+      Coded by <a href="https://www.frontendmentor.io/profile/Lisviks">Deividas Rimkus</a>.
+    </div>
+  </body>
+</html>
